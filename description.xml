@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE trips_catalog [
+  <!ENTITY imgSpain SYSTEM "https://www.state.gov/wp-content/uploads/2023/07/shutterstock_1656628171v2-2107x1406.jpg" NDATA jpg>
+  <!ENTITY imgNorway SYSTEM "https://hips.hearstapps.com/hmg-prod/images/city-of-alesund-norway-royalty-free-image-1620376302.?crop=0.670xw:1.00xh;0.298xw,0&resize=640:*" NDATA jpg>
+  <!ENTITY imgNY SYSTEM "https://res.klook.com/image/upload/Mobile/City/szhx3ytpgfnhpbmsngk0.jpg" NDATA jpg>
+  <!ENTITY imgLA SYSTEM "https://www.visittheusa.com/sites/default/files/styles/hero_l/public/images/hero_media_image/2017-01/Getty_515070156_EDITORIALONLY_LosAngeles_HollywoodBlvd_Web72DPI_0.jpg?h=0a8b6f8b&itok=lst_2_5d" NDATA jpg>
+  <!ENTITY imgEgypt SYSTEM "https://media.istockphoto.com/id/1397759783/photo/pyramid-complex-in-aswan-city-by-the-nile-aerial-view-egypt.webp?b=1&s=170667a&w=0&k=20&c=JI4VGOwiIZDm23QL10akKGLTmjdgyI3t-E3Mf5N4LBA=" NDATA jpg>
+  <!ENTITY imgJapan SYSTEM "https://www.state.gov/wp-content/uploads/2019/04/Japan-2107x1406.jpg" NDATA jpg>
+  <!ENTITY imgIndia SYSTEM "https://media.istockphoto.com/id/1146517111/photo/taj-mahal-mausoleum-in-agra.jpg?s=612x612&w=0&k=20&c=vcIjhwUrNyjoKbGbAQ5sOcEzDUgOfCsm9ySmJ8gNeRk=" NDATA jpg>
+  <!NOTATION jpg PUBLIC "jpg">
+]>
+<?xml-stylesheet type="text/xsl" href="project.xsl"?>
+
+<trips_catalog xmlns="http://www.w3schools.com"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.w3schools.com validation.xsd">
+		<trips>
+			<trip id="t1" region="Европа" destination="Испания">
+				<title>Испания - страстна и разнообразна</title>
+				<startDate>2024-02-26</startDate>
+				<endDate>2024-02-29</endDate>
+				<price>1890</price>
+				<map>https://maps.app.goo.gl/ohpDJ9tV6ggsAp2M6</map>
+				<description>
+				Можете ли да си представите, че сте заобиколени от прекрасно синьо море,
+				изобилие от палми и великолепни  плажове с бял пясък? Да, това е Испания!
+				Палещо слънце, горещи ритми, средиземноморска кухня и луксозни хотели – всичко това ви очаква тук.
+				</description>
+				<route>
+					<stop>Мадрид</stop>
+					<stop>Барселона</stop>
+				</route>
+				<listTourists>
+					<touristName> Ванеса Григорова </touristName>
+					<touristName> Милен Григоров </touristName>
+				</listTourists>
+			</trip>
+			<trip id="t2" region="Европа" destination="Норвегия">
+				<title>Норвегия - впечатляващи фиордове, вековни планини и северно сияние</title>
+				<startDate>2024-07-04</startDate>
+				<endDate>2024-07-10</endDate>
+				<price>3990</price>
+				<map>https://maps.app.goo.gl/jHPD5m8MmYFsEUme9</map>
+				<description>
+				Впуснете се в едно изключително и незабравимо преживяване, посещавайки най-красивите заливи на света - фиордите в Норвегия.
+				</description>
+				<route>
+					<stop>Осло</stop>
+					<stop>Берген</stop>
+					<stop>Тромсьо</stop>
+				</route>
+				<listTourists>
+					<touristName> Пламен Найденов </touristName>
+					<touristName> Велислава Крумова </touristName>
+					<touristName> Преслава Андонова </touristName>
+					<touristName> Илия Стоев </touristName>
+				</listTourists>
+			</trip>
+			<trip id="t3" region="Северна Америка" destination="Ню Йорк">
+				<title>Забавления в Голямата ябълка - Ню Йорк, САЩ</title>
+				<startDate>2024-08-05</startDate>
+				<endDate>2024-08-25</endDate>
+				<price>5890</price>
+				<map> https://maps.app.goo.gl/hNs1rCPN7Rc81BYx7</map>
+				<description>
+				Изживейте американската мечта и усетете нюйоркския дух, като посетите Статуята на Свободата и Таймс Скуеър. Ню Йорк ви предлага уникален културен и градски опит.
+				</description>
+				<route>
+					<stop>Манхатън</stop>
+					<stop>Статуята на свободата</stop>
+					<stop>Емпайър Стейт Билдинг</stop>
+					<stop>Таймс Скуеър</stop>
+					<stop>Сентръл Парк</stop>
+				</route>
+				<listTourists>
+					<touristName> Даниела Георгиева </touristName>
+					<touristName> Божидар Абаджиев </touristName>
+					<touristName> Стилиян Стоянов </touristName>
+					<touristName> Гергана Куртева </touristName>
+				</listTourists>
+			</trip>
+			<trip id="t4" region="Северна Америка" destination="Лос Анджелис">
+				<title>Лос Анджелис - градът на мечтите и звездите</title>
+				<startDate>2024-08-02</startDate>
+				<endDate>2024-08-20</endDate>
+				<price>5990</price>
+				<map>https://maps.app.goo.gl/32aNLnuKhwnJjjd1A</map>
+				<description>
+				Потопете се в най-откровените си желания в града на ангелите, където слънцето, знаменитостите и културата се сливат.
+				Разгледайте Холивидския булевард, посетете Грифит парк и обиколете световноизвестния Музей на изкуствата(LACMA).
+				</description>
+				<route>
+					<stop>Холивуд</stop>
+					<stop>Бевърли Хилс</stop>
+					<stop>Санта Моника</stop>
+					<stop>Обсерватория Грифит</stop>
+					<stop>Сънсет Стрип Авеню</stop>
+				</route>
+				<listTourists>
+					<touristName> Никола Георгиев </touristName>
+					<touristName> Дарина Стоянова </touristName>
+				</listTourists>
+			</trip>
+			<trip id="t5" region="Африка" destination="Египет">
+				<title>На сафари в Египет</title>
+				<startDate>2024-05-03</startDate>
+				<endDate>2024-05-13</endDate>
+				<price>2490</price>
+				<map></map>
+				<description>
+				Египет е страна с богата история и култура, обгърната от мистика и величие. Посетете пирамидите в Гиза, откриййте древните храмове в Луксор и Карнак и се потопете
+				в богатото религиозно и историческо наследство.
+				</description>
+				<route>
+					<stop>Кайро</stop>
+					<stop>Луксор</stop>
+					<stop>Пирамидите в Гиза и Сфинкса</stop>
+					<stop>Абу Симбел</stop>
+				</route>
+				<listTourists>
+					<touristName> Ричард Илиев </touristName>
+					<touristName> Леонардо Петров </touristName>
+					<touristName> Мерилин Иванова </touristName>
+				</listTourists>
+			</trip>
+			<trip id="t6" region="Азия" destination="Япония">
+				<title>Япония - страната на изгряващото слънце</title>
+				<startDate>2024-04-12</startDate>
+				<endDate>2024-04-22</endDate>
+				<price>5990</price>
+				<map>https://maps.app.goo.gl/EngSjKqs6ZhxHKQF6</map>
+				<description>
+				Екскурзията в Япония ще ви отведе в страна, където традицията среща съвременноста. Посетете столицата Токио с нейните светещи реклами
+				и традиционни храмове като Сензо-джи. Япония предлага уникално разнообразие от култура, гастрономия и природа.
+				</description>
+				<route>
+					<stop>Токио</stop>
+					<stop>Киото</stop>
+					<stop>Остров Мияджима</stop>
+				</route>
+				<listTourists>
+					<touristName> Адриана Атанасова </touristName>
+					<touristName> Константин Тодоров </touristName>
+					<touristName> Радина Косева</touristName>
+				</listTourists>
+			</trip>
+			<trip id="t7" region="Азия" destination="Индия">
+				<title>Магията на Индия</title>
+				<startDate>2024-09-12</startDate>
+				<endDate>2024-09-22</endDate>
+				<price>5890</price>
+				<map>https://maps.app.goo.gl/pHEqAYA1jUQus33a6</map>
+				<description>
+				Пригответе се за експлозия на сетивата в Индия. Посетете Тадж Махал, опитайте дивите аромати и вкусове на индийската кухня и изживейте
+				цветната култура на Варанаси край светите води на Ганга.
+				</description>
+				<route>
+					<stop>Делхи</stop>
+					<stop>Тадж Махал</stop>
+					<stop>Мумбай</stop>
+				</route>
+				<listTourists>
+					<touristName> Петя Костадинова </touristName>
+					<touristName> Рикардо Тодоров </touristName>
+					<touristName> Николина Димитрова </touristName>
+				</listTourists>
+			</trip>
+		</trips>
+</trips_catalog>

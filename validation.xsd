@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:xlink="http://www.w3.org/1999/xlink"
            xmlns="http://www.w3schools.com"
            targetNamespace="http://www.w3schools.com"
            elementFormDefault="qualified"
@@ -41,6 +42,22 @@
 					<xs:pattern value="([A-Z][a-z]+)+"/>
 				</xs:restriction>
 			</xs:simpleType>
+
+			<!-- Attributes of map -->
+			<xs:simpleType name="hrefType">
+				<xs:restriction base="xs:anyURI"/>
+			</xs:simpleType>
+
+			<xs:simpleType name="mapType">
+				<xs:restriction base="xs:string"/>
+			</xs:simpleType>
+
+			<xs:simpleType name="showType">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="embed"/>
+					<xs:enumeration value="simple"/>
+				</xs:restriction>
+			</xs:simpleType>
 			
 			<!-- Simple Elements -->
 			<xs:element name="title" type="xs:string"/>
@@ -54,7 +71,7 @@
 					</xs:restriction>
 				</xs:simpleType>
 			</xs:element>
-			<xs:element name="map" type="xs:string"/>
+			<!-- <xs:element name="map" type="xs:string"/> -->
 			<xs:element name="stop" type="xs:string"/>
 			<xs:element name="touristName">
 				<xs:simpleType>
@@ -94,7 +111,13 @@
 						<xs:element ref="endDate"/>
 						<xs:element ref="price"/>
 						<xs:element ref="description"/>
-						<xs:element ref="map"/>
+						<xs:element name="map">
+							<xs:complexType>
+									<xs:attribute name="type" type="mapType" use="required"/>
+									<xs:attribute name="href" type="hrefType" use="required"/>
+									<xs:attribute name="show" type="showType" use="required"/>
+							</xs:complexType>
+						</xs:element>
 						<xs:element name="route">
 							<xs:complexType>
 								<xs:sequence> 

@@ -11,7 +11,7 @@
             </head>
             <body>
                 <div class="container">
-                    <h1 color="red"><img src="logo.png" alt="Logo"/> Каталог на екскурзии</h1>
+                    <h1><img src="logo.png" alt="Logo"/> Каталог на екскурзии</h1>
                     <table id="myTable">
                         <tr>
                             <th onclick="sortTable(0)">Дестинация</th>
@@ -20,6 +20,7 @@
                             <th onclick="priceSort(3)">Цена (лв)</th>
                         </tr>
                         <xsl:for-each select="//ns:trip">
+                        
                             <tr>
                                 <td>
                                     <xsl:value-of select="@destination"/>
@@ -37,7 +38,39 @@
                         </xsl:for-each>
                     </table>
                 </div>
+                <xsl:apply-templates select="//ns:trip" />
             </body>
         </html>
     </xsl:template>
+
+    <xsl:template match="//ns:trip">
+    <div class="trip">
+        <h2><xsl:value-of select="ns:title" /></h2>
+        <p class="date">Дати: <xsl:value-of select="ns:startDate" /> до <xsl:value-of select="ns:endDate" /></p>
+        <table>
+            <td>
+                <img src="testPhoto.jpg" alt="Trip Photo" class="big_image"/>
+            </td>
+            <td>
+                <p><xsl:value-of select="ns:description" /></p>
+            </td>
+        </table>
+        <h3>Маршрут:</h3>
+        <ul class="route">
+            <xsl:for-each select="ns:route/ns:stop">
+                <li><xsl:value-of select="."/></li>
+            </xsl:for-each>
+        </ul>
+        <h3>Пътници:</h3>
+        <ul class="tourists">
+            <xsl:for-each select="ns:listTourists/ns:touristName">
+                <li><xsl:value-of select="."/></li>
+            </xsl:for-each>
+        </ul>
+        <h3>Цена: <xsl:value-of select="ns:price"/> лева</h3>
+    </div>
+    <br />
+</xsl:template>
+
+
 </xsl:stylesheet>

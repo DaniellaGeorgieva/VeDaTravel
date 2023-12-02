@@ -35,3 +35,43 @@ img {
     width: 100px;
     height: 30px;
 }
+.big_image{
+    width: 600px;
+    height: 400px;
+}
+ul {
+    list-style: square;
+}
+
+.trip {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.trip h2 {
+    color: #2a4a4f;
+}
+
+.trip p.date {
+    color: #666;
+    font-style: italic;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+}
+.route, .tourists {
+    list-style: square;
+    margin-top: 10px;
+}
+h3 {
+    color: #4a5759;
+    
+}
+li{
+    color: #4a5759;
+}

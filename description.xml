@@ -1,18 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!DOCTYPE trips_catalog [
-  <!ENTITY imgSpain SYSTEM "https://www.state.gov/wp-content/uploads/2023/07/shutterstock_1656628171v2-2107x1406.jpg" NDATA jpg>
-  <!ENTITY imgNorway SYSTEM "https://hips.hearstapps.com/hmg-prod/images/city-of-alesund-norway-royalty-free-image-1620376302.?crop=0.670xw:1.00xh;0.298xw,0&resize=640:*" NDATA jpg>
-  <!ENTITY imgNY SYSTEM "https://res.klook.com/image/upload/Mobile/City/szhx3ytpgfnhpbmsngk0.jpg" NDATA jpg>
-  <!ENTITY imgLA SYSTEM "https://www.visittheusa.com/sites/default/files/styles/hero_l/public/images/hero_media_image/2017-01/Getty_515070156_EDITORIALONLY_LosAngeles_HollywoodBlvd_Web72DPI_0.jpg?h=0a8b6f8b&itok=lst_2_5d" NDATA jpg>
-  <!ENTITY imgEgypt SYSTEM "https://media.istockphoto.com/id/1397759783/photo/pyramid-complex-in-aswan-city-by-the-nile-aerial-view-egypt.webp?b=1&s=170667a&w=0&k=20&c=JI4VGOwiIZDm23QL10akKGLTmjdgyI3t-E3Mf5N4LBA=" NDATA jpg>
-  <!ENTITY imgJapan SYSTEM "https://www.state.gov/wp-content/uploads/2019/04/Japan-2107x1406.jpg" NDATA jpg>
-  <!ENTITY imgIndia SYSTEM "https://media.istockphoto.com/id/1146517111/photo/taj-mahal-mausoleum-in-agra.jpg?s=612x612&w=0&k=20&c=vcIjhwUrNyjoKbGbAQ5sOcEzDUgOfCsm9ySmJ8gNeRk=" NDATA jpg>
-  <!NOTATION jpg PUBLIC "jpg">
-]>
 <?xml-stylesheet type="text/xsl" href="project.xsl"?>
 
-<trips_catalog xmlns="http://www.w3schools.com"
+<trips_catalog
+		xmlns="http://www.w3schools.com"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.w3schools.com validation.xsd">
 		<trips>
@@ -21,12 +13,17 @@
 				<startDate>2024-02-26</startDate>
 				<endDate>2024-02-29</endDate>
 				<price>1890</price>
-				<map>https://maps.app.goo.gl/ohpDJ9tV6ggsAp2M6</map>
 				<description>
 				Можете ли да си представите, че сте заобиколени от прекрасно синьо море,
 				изобилие от палми и великолепни  плажове с бял пясък? Да, това е Испания!
 				Палещо слънце, горещи ритми, средиземноморска кухня и луксозни хотели – всичко това ви очаква тук.
 				</description>
+				<map type="simple" 
+				     href="https://maps.app.goo.gl/ohpDJ9tV6ggsAp2M6"
+				     show="embed"/>
+				<photo type="simple" 
+					href="https://m3.netinfo.bg/media/images/49835/49835878/r-orig-orig-ispaniia.jpg"
+					show="embed"/>
 				<route>
 					<stop>Мадрид</stop>
 					<stop>Барселона</stop>
@@ -41,10 +38,15 @@
 				<startDate>2024-07-04</startDate>
 				<endDate>2024-07-10</endDate>
 				<price>3990</price>
-				<map>https://maps.app.goo.gl/jHPD5m8MmYFsEUme9</map>
 				<description>
 				Впуснете се в едно изключително и незабравимо преживяване, посещавайки най-красивите заливи на света - фиордите в Норвегия.
 				</description>
+				<map type="simple" 
+				     href="https://maps.app.goo.gl/jHPD5m8MmYFsEUme9"
+				     show="embed"/>
+				<photo type="simple" 
+					href="https://bulgariatravel.bg/dest_data/original/BIG_geiranger_14024810801166.jpg"
+					show="embed"/>
 				<route>
 					<stop>Осло</stop>
 					<stop>Берген</stop>
@@ -62,10 +64,15 @@
 				<startDate>2024-08-05</startDate>
 				<endDate>2024-08-25</endDate>
 				<price>5890</price>
-				<map> https://maps.app.goo.gl/hNs1rCPN7Rc81BYx7</map>
 				<description>
 				Изживейте американската мечта и усетете нюйоркския дух, като посетите Статуята на Свободата и Таймс Скуеър. Ню Йорк ви предлага уникален културен и градски опит.
 				</description>
+				<map type="simple" 
+				     href="https://maps.app.goo.gl/hNs1rCPN7Rc81BYx7"
+				     show="embed"/>
+				<photo type="simple" 
+					href="https://cdn2.bohemia.bg/touristsites/832426/6GIIXT.jpg"
+					show="embed"/>
 				<route>
 					<stop>Манхатън</stop>
 					<stop>Статуята на свободата</stop>
@@ -85,11 +92,16 @@
 				<startDate>2024-08-02</startDate>
 				<endDate>2024-08-20</endDate>
 				<price>5990</price>
-				<map>https://maps.app.goo.gl/32aNLnuKhwnJjjd1A</map>
 				<description>
 				Потопете се в най-откровените си желания в града на ангелите, където слънцето, знаменитостите и културата се сливат.
 				Разгледайте Холивидския булевард, посетете Грифит парк и обиколете световноизвестния Музей на изкуствата(LACMA).
 				</description>
+				<map type="simple" 
+				     href="https://maps.app.goo.gl/32aNLnuKhwnJjjd1A"
+				     show="embed"/>
+				<photo type="simple" 
+					href="https://nasamnatam.com/pics/1448-0597be8a442a8f77b0ba754d17c2cedc.jpg"
+					show="embed"/>
 				<route>
 					<stop>Холивуд</stop>
 					<stop>Бевърли Хилс</stop>
@@ -107,11 +119,16 @@
 				<startDate>2024-05-03</startDate>
 				<endDate>2024-05-13</endDate>
 				<price>2490</price>
-				<map></map>
 				<description>
 				Египет е страна с богата история и култура, обгърната от мистика и величие. Посетете пирамидите в Гиза, откриййте древните храмове в Луксор и Карнак и се потопете
 				в богатото религиозно и историческо наследство.
 				</description>
+				<map type="simple" 
+				     href="https://www.google.com/maps/place/%D0%95%D0%B3%D0%B8%D0%BF%D0%B5%D1%82/@26.9060999,30.8768375,6z/data=!4m6!3m5!1s0x14368976c35c36e9:0x2c45a00925c4c444!8m2!3d26.820553!4d30.802498!16zL20vMDJrNTQ?entry=ttu"
+				     show="embed"/>
+				<photo type="simple" 
+					href="https://eva.bg/media/pr/netpeak/1/Egyptian_Civilization.jpg"
+					show="embed"/>
 				<route>
 					<stop>Кайро</stop>
 					<stop>Луксор</stop>
@@ -129,11 +146,16 @@
 				<startDate>2024-04-12</startDate>
 				<endDate>2024-04-22</endDate>
 				<price>5990</price>
-				<map>https://maps.app.goo.gl/EngSjKqs6ZhxHKQF6</map>
 				<description>
 				Екскурзията в Япония ще ви отведе в страна, където традицията среща съвременноста. Посетете столицата Токио с нейните светещи реклами
 				и традиционни храмове като Сензо-джи. Япония предлага уникално разнообразие от култура, гастрономия и природа.
 				</description>
+				<map type="simple" 
+				     href="https://maps.app.goo.gl/EngSjKqs6ZhxHKQF6"
+				     show="embed"/>
+				<photo type="simple" 
+					href="https://animes.bg/wp-content/uploads/2018/10/BIG_interlax-japan-Custom_144912954011.jpg"
+					show="embed"/>
 				<route>
 					<stop>Токио</stop>
 					<stop>Киото</stop>
@@ -150,11 +172,16 @@
 				<startDate>2024-09-12</startDate>
 				<endDate>2024-09-22</endDate>
 				<price>5890</price>
-				<map>https://maps.app.goo.gl/pHEqAYA1jUQus33a6</map>
 				<description>
 				Пригответе се за експлозия на сетивата в Индия. Посетете Тадж Махал, опитайте дивите аромати и вкусове на индийската кухня и изживейте
 				цветната култура на Варанаси край светите води на Ганга.
 				</description>
+				<map type="simple" 
+				     href="https://www.openstreetmap.org/relation/304716"
+				     show="embed"/>
+				<photo type="simple" 
+					href="https://trud.bg/public/images/articles/2021-11/India-1_4321791391391731664_big.jpg"
+					show="embed"/>
 				<route>
 					<stop>Делхи</stop>
 					<stop>Тадж Махал</stop>

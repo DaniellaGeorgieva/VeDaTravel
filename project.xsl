@@ -1,12 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:ns="http://www.w3schools.com">
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:ns="http://www.w3schools.com" xmlns:xlink="http://www.w3.org/1999/xlink">
     <xsl:template match="/">
         <html>
             <head>
                 <link rel="stylesheet" href="design.css"/>
                 <title>Каталог на екскурзии</title>
                 <script src="scripts/script.js" defer="defer"></script>
-				<script src="scripts/dateSort.js" defer="defer"></script>
+                <script src="scripts/dateSort.js" defer="defer"></script>
                 <script src="scripts/priceSort.js" defer="defer"></script>
             </head>
             <body>
@@ -16,11 +15,10 @@
                         <tr>
                             <th onclick="sortTable(0)">Дестинация</th>
                             <th onclick="dateSort(1)">Дата отиване</th>
-							<th onclick="dateSort(2)">Дата връщане</th>
+                            <th onclick="dateSort(2)">Дата връщане</th>
                             <th onclick="priceSort(3)">Цена (лв)</th>
                         </tr>
                         <xsl:for-each select="//ns:trip">
-                        
                             <tr>
                                 <td>
                                     <xsl:value-of select="@destination"/>
@@ -28,7 +26,7 @@
                                 <td>
                                     <xsl:value-of select="ns:startDate"/>
                                 </td>
-								<td>
+                                <td>
                                     <xsl:value-of select="ns:endDate"/>
                                 </td>
                                 <td>
@@ -43,34 +41,42 @@
         </html>
     </xsl:template>
 
-    <xsl:template match="//ns:trip">
-    <div class="trip">
-        <h2><xsl:value-of select="ns:title" /></h2>
-        <p class="date">Дати: <xsl:value-of select="ns:startDate" /> до <xsl:value-of select="ns:endDate" /></p>
-        <table>
-            <td>
-                <img src="testPhoto.jpg" alt="Trip Photo" class="big_image"/>
-            </td>
-            <td>
-                <p><xsl:value-of select="ns:description" /></p>
-            </td>
-        </table>
-        <h3>Маршрут:</h3>
-        <ul class="route">
-            <xsl:for-each select="ns:route/ns:stop">
-                <li><xsl:value-of select="."/></li>
-            </xsl:for-each>
-        </ul>
-        <h3>Пътници:</h3>
-        <ul class="tourists">
-            <xsl:for-each select="ns:listTourists/ns:touristName">
-                <li><xsl:value-of select="."/></li>
-            </xsl:for-each>
-        </ul>
-        <h3>Цена: <xsl:value-of select="ns:price"/> лева</h3>
-    </div>
-    <br />
-</xsl:template>
+    <xsl:template match="ns:trip">
+        <div class="trip">
+            <h2><xsl:value-of select="ns:title" /></h2>
+            <p class="date">Дати: <xsl:value-of select="ns:startDate" /> до <xsl:value-of select="ns:endDate" /></p>
+            <table>
+                <td>
+                    <xsl:apply-templates select="ns:photo" />
+                </td>
+                <td>
+                    <p><xsl:value-of select="ns:description" /></p>
+                </td>
+            </table>
+            <h3>Маршрут:</h3>
+            <ul class="route">
+                <xsl:for-each select="ns:route/ns:stop">
+                    <li><xsl:value-of select="."/></li>
+                </xsl:for-each>
+            </ul>
+            <h3>Пътници:</h3>
+            <ul class="tourists">
+                <xsl:for-each select="ns:listTourists/ns:touristName">
+                    <li><xsl:value-of select="."/></li>
+                </xsl:for-each>
+            </ul>
+            <xsl:apply-templates select="ns:map" />
+            <h3>Цена: <xsl:value-of select="ns:price"/> лева</h3>
+        </div>
+        <br />
+    </xsl:template>
 
+    <xsl:template match="ns:map">
+        <iframe src="{@href}" title="Embedded Map" width="600" height="400" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </xsl:template>
+
+    <xsl:template match="ns:photo">
+        <img src="{@href}" title="Embedded Photo" class="big_image"></img>
+    </xsl:template>
 
 </xsl:stylesheet>

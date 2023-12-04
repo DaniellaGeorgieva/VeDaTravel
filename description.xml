@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<!DOCTYPE trips_catalog [
-  <!ENTITY imgSpain SYSTEM "https://www.state.gov/wp-content/uploads/2023/07/shutterstock_1656628171v2-2107x1406.jpg" NDATA jpg>
-  <!ENTITY imgNorway SYSTEM "https://hips.hearstapps.com/hmg-prod/images/city-of-alesund-norway-royalty-free-image-1620376302.?crop=0.670xw:1.00xh;0.298xw,0&resize=640:*" NDATA jpg>
-  <!ENTITY imgNY SYSTEM "https://res.klook.com/image/upload/Mobile/City/szhx3ytpgfnhpbmsngk0.jpg" NDATA jpg>
-  <!ENTITY imgLA SYSTEM "https://www.visittheusa.com/sites/default/files/styles/hero_l/public/images/hero_media_image/2017-01/Getty_515070156_EDITORIALONLY_LosAngeles_HollywoodBlvd_Web72DPI_0.jpg?h=0a8b6f8b&itok=lst_2_5d" NDATA jpg>
-  <!ENTITY imgEgypt SYSTEM "https://media.istockphoto.com/id/1397759783/photo/pyramid-complex-in-aswan-city-by-the-nile-aerial-view-egypt.webp?b=1&s=170667a&w=0&k=20&c=JI4VGOwiIZDm23QL10akKGLTmjdgyI3t-E3Mf5N4LBA=" NDATA jpg>
-  <!ENTITY imgJapan SYSTEM "https://www.state.gov/wp-content/uploads/2019/04/Japan-2107x1406.jpg" NDATA jpg>
-  <!ENTITY imgIndia SYSTEM "https://media.istockphoto.com/id/1146517111/photo/taj-mahal-mausoleum-in-agra.jpg?s=612x612&w=0&k=20&c=vcIjhwUrNyjoKbGbAQ5sOcEzDUgOfCsm9ySmJ8gNeRk=" NDATA jpg>
-  <!NOTATION jpg PUBLIC "jpg">
-]>
 <?xml-stylesheet type="text/xsl" href="project.xsl"?>
+
+<!DOCTYPE trips_catalog SYSTEM "validation.dtd" [
+	<!ENTITY imgSpain SYSTEM "images/spain.jpg">
+    <!ENTITY imgNorway SYSTEM "images/norway.jpg">
+    <!ENTITY imgNY SYSTEM "images/ny.jpg">
+    <!ENTITY imgLA SYSTEM "images/la.jpg">
+    <!ENTITY imgEgypt SYSTEM "images/egypt.jpg">
+    <!ENTITY imgJapan SYSTEM "images/japan.jpg">
+    <!ENTITY imgIndia SYSTEM "images/india.jpg">
+]>
 
 <trips_catalog
 		xmlns="http://www.w3schools.com"
@@ -18,7 +17,7 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.w3schools.com validation.xsd">
 		<trips>
-			<trip xmlns:xlink="http://www.w3.org/1999/xlink" id="t1" region="Европа" destination="Испания">
+			<trip id="t1" region="Европа" destination="Испания">
 				<title>Испания - страстна и разнообразна</title>
 				<startDate>2024-02-26</startDate>
 				<endDate>2024-02-29</endDate>
@@ -28,13 +27,11 @@
 				изобилие от палми и великолепни  плажове с бял пясък? Да, това е Испания!
 				Палещо слънце, горещи ритми, средиземноморска кухня и луксозни хотели – всичко това ви очаква тук.
 				</description>
-				<map type="simple" 
-				     href="https://maps.app.goo.gl/ohpDJ9tV6ggsAp2M6"
-				     show="embed"/>
 				<route>
 					<stop>Мадрид</stop>
 					<stop>Барселона</stop>
 				</route>
+				<photo>&imgSpain;</photo>
 				<listTourists>
 					<touristName> Ванеса Григорова </touristName>
 					<touristName> Милен Григоров </touristName>
@@ -46,16 +43,14 @@
 				<endDate>2024-07-10</endDate>
 				<price>3990</price>
 				<description>
-				Впуснете се в едно изключително и незабравимо преживяване, посещавайки най-красивите заливи на света - фиордите в Норвегия.
+					Впуснете се в едно изключително и незабравимо преживяване, посещавайки най-красивите заливи на света - фиордите в Норвегия.
 				</description>
-				<map type="simple" 
-				     href="https://maps.app.goo.gl/jHPD5m8MmYFsEUme9"
-				     show="embed"/>
 				<route>
 					<stop>Осло</stop>
 					<stop>Берген</stop>
 					<stop>Тромсьо</stop>
 				</route>
+				<photo>&imgNorway;</photo>
 				<listTourists>
 					<touristName> Пламен Найденов </touristName>
 					<touristName> Велислава Крумова </touristName>
@@ -71,9 +66,6 @@
 				<description>
 				Изживейте американската мечта и усетете нюйоркския дух, като посетите Статуята на Свободата и Таймс Скуеър. Ню Йорк ви предлага уникален културен и градски опит.
 				</description>
-				<map type="simple" 
-				     href="https://maps.app.goo.gl/hNs1rCPN7Rc81BYx7"
-				     show="embed"/>
 				<route>
 					<stop>Манхатън</stop>
 					<stop>Статуята на свободата</stop>
@@ -81,6 +73,7 @@
 					<stop>Таймс Скуеър</stop>
 					<stop>Сентръл Парк</stop>
 				</route>
+				<photo>&imgNY;</photo>
 				<listTourists>
 					<touristName> Даниела Георгиева </touristName>
 					<touristName> Божидар Абаджиев </touristName>
@@ -97,9 +90,6 @@
 				Потопете се в най-откровените си желания в града на ангелите, където слънцето, знаменитостите и културата се сливат.
 				Разгледайте Холивидския булевард, посетете Грифит парк и обиколете световноизвестния Музей на изкуствата(LACMA).
 				</description>
-				<map type="simple" 
-				     href="https://maps.app.goo.gl/32aNLnuKhwnJjjd1A"
-				     show="embed"/>
 				<route>
 					<stop>Холивуд</stop>
 					<stop>Бевърли Хилс</stop>
@@ -107,6 +97,7 @@
 					<stop>Обсерватория Грифит</stop>
 					<stop>Сънсет Стрип Авеню</stop>
 				</route>
+				<photo>&imgLA;</photo>
 				<listTourists>
 					<touristName> Никола Георгиев </touristName>
 					<touristName> Дарина Стоянова </touristName>
@@ -121,15 +112,13 @@
 				Египет е страна с богата история и култура, обгърната от мистика и величие. Посетете пирамидите в Гиза, откриййте древните храмове в Луксор и Карнак и се потопете
 				в богатото религиозно и историческо наследство.
 				</description>
-				<map type="simple" 
-				     href="https://www.google.com/maps/place/%D0%95%D0%B3%D0%B8%D0%BF%D0%B5%D1%82/@26.9060999,30.8768375,6z/data=!4m6!3m5!1s0x14368976c35c36e9:0x2c45a00925c4c444!8m2!3d26.820553!4d30.802498!16zL20vMDJrNTQ?entry=ttu"
-				     show="embed"/>
 				<route>
 					<stop>Кайро</stop>
 					<stop>Луксор</stop>
 					<stop>Пирамидите в Гиза и Сфинкса</stop>
 					<stop>Абу Симбел</stop>
 				</route>
+				<photo>&imgEgypt;</photo>
 				<listTourists>
 					<touristName> Ричард Илиев </touristName>
 					<touristName> Леонардо Петров </touristName>
@@ -145,14 +134,12 @@
 				Екскурзията в Япония ще ви отведе в страна, където традицията среща съвременноста. Посетете столицата Токио с нейните светещи реклами
 				и традиционни храмове като Сензо-джи. Япония предлага уникално разнообразие от култура, гастрономия и природа.
 				</description>
-				<map type="simple" 
-				     href="https://maps.app.goo.gl/EngSjKqs6ZhxHKQF6"
-				     show="embed"/>
 				<route>
 					<stop>Токио</stop>
 					<stop>Киото</stop>
 					<stop>Остров Мияджима</stop>
 				</route>
+				<photo>&imgJapan;</photo>
 				<listTourists>
 					<touristName> Адриана Атанасова </touristName>
 					<touristName> Константин Тодоров </touristName>
@@ -168,14 +155,12 @@
 				Пригответе се за експлозия на сетивата в Индия. Посетете Тадж Махал, опитайте дивите аромати и вкусове на индийската кухня и изживейте
 				цветната култура на Варанаси край светите води на Ганга.
 				</description>
-				<map type="simple" 
-				     href="https://maps.app.goo.gl/pHEqAYA1jUQus33a6"
-				     show="embed"/>
 				<route>
 					<stop>Делхи</stop>
 					<stop>Тадж Махал</stop>
 					<stop>Мумбай</stop>
 				</route>
+				<photo>&imgIndia;</photo>
 				<listTourists>
 					<touristName> Петя Костадинова </touristName>
 					<touristName> Рикардо Тодоров </touristName>

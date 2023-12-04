@@ -31,7 +31,7 @@
 			
 			<!-- Attributes of trip - id -->
 			<xs:simpleType name="id_trip">
-				<xs:restriction base="xs:string">
+				<xs:restriction base="xs:ID">
 					<xs:pattern value="t[0-9]+" />
 				</xs:restriction>
 			</xs:simpleType>
@@ -71,6 +71,7 @@
 					</xs:restriction>
 				</xs:simpleType>
 			</xs:element>
+			<xs:element name="photo" type="xs:anyURI"/>
 			<!-- <xs:element name="map" type="xs:string"/> -->
 			<xs:element name="stop" type="xs:string"/>
 			<xs:element name="touristName">
@@ -80,13 +81,29 @@
 						</xs:restriction>
 				</xs:simpleType>
 			</xs:element>
-			
+			<!-- <xs:element name="tourist"/> -->
 			<!-- Complex elements -->
 			
 			<xs:element name="trips_catalog">
 				<xs:complexType>
 					<xs:sequence>
 						<xs:element ref="trips"/>
+						<xs:element name="listOfTourists">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="tourist" maxOccurs="unbounded">
+									<xs:complexType>
+										<xs:simpleContent>
+											<xs:extension base="xs:string">
+												<xs:attribute name="t_id" type="xs:IDREF" use="required"/>
+												<xs:attribute name="sd_id" type="xs:IDREF" use="required"/>
+											</xs:extension>
+										</xs:simpleContent>
+									</xs:complexType>
+								</xs:element>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
 					</xs:sequence>
 				</xs:complexType>
 				<xs:key name="keyTrips">
@@ -111,13 +128,14 @@
 						<xs:element ref="endDate"/>
 						<xs:element ref="price"/>
 						<xs:element ref="description"/>
-						<xs:element name="map">
+						<xs:element ref="photo"/>
+						<!-- <xs:element name="map">
 							<xs:complexType>
 									<xs:attribute name="type" type="mapType" use="required"/>
 									<xs:attribute name="href" type="hrefType" use="required"/>
 									<xs:attribute name="show" type="showType" use="required"/>
 							</xs:complexType>
-						</xs:element>
+						</xs:element> -->
 						<xs:element name="route">
 							<xs:complexType>
 								<xs:sequence> 
@@ -125,6 +143,12 @@
 								</xs:sequence>
 							</xs:complexType>
 						</xs:element>
+						
+						<!-- <xs:element name="photo">
+							<xs:complexType>
+								<xs:attribute name="id" type="xs:ID" use="required"/>
+							</xs:complexType>
+						</xs:element> -->
 						<xs:element name="listTourists">
 							<xs:complexType>
 								<xs:sequence>
@@ -150,9 +174,4 @@
 					</xs:unique>
 			</xs:element>
 			
-			<xs:element name="image">
-				<xs:complexType>
-					<xs:attribute name="href" type="xs:ENTITY" use="required"/>
-				</xs:complexType>
-			</xs:element>
 </xs:schema>

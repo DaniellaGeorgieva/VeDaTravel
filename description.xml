@@ -27,11 +27,11 @@
 				изобилие от палми и великолепни  плажове с бял пясък? Да, това е Испания!
 				Палещо слънце, горещи ритми, средиземноморска кухня и луксозни хотели – всичко това ви очаква тук.
 				</description>
+				<photo>&imgSpain;</photo>
 				<route>
 					<stop>Мадрид</stop>
 					<stop>Барселона</stop>
 				</route>
-				<photo>&imgSpain;</photo>
 				<listTourists>
 					<touristName> Ванеса Григорова </touristName>
 					<touristName> Милен Григоров </touristName>
@@ -45,12 +45,12 @@
 				<description>
 					Впуснете се в едно изключително и незабравимо преживяване, посещавайки най-красивите заливи на света - фиордите в Норвегия.
 				</description>
+				<photo>&imgNorway;</photo>
 				<route>
 					<stop>Осло</stop>
 					<stop>Берген</stop>
 					<stop>Тромсьо</stop>
 				</route>
-				<photo>&imgNorway;</photo>
 				<listTourists>
 					<touristName> Пламен Найденов </touristName>
 					<touristName> Велислава Крумова </touristName>
@@ -66,6 +66,7 @@
 				<description>
 				Изживейте американската мечта и усетете нюйоркския дух, като посетите Статуята на Свободата и Таймс Скуеър. Ню Йорк ви предлага уникален културен и градски опит.
 				</description>
+				<photo>&imgNY;</photo>
 				<route>
 					<stop>Манхатън</stop>
 					<stop>Статуята на свободата</stop>
@@ -73,7 +74,6 @@
 					<stop>Таймс Скуеър</stop>
 					<stop>Сентръл Парк</stop>
 				</route>
-				<photo>&imgNY;</photo>
 				<listTourists>
 					<touristName> Даниела Георгиева </touristName>
 					<touristName> Божидар Абаджиев </touristName>
@@ -90,6 +90,7 @@
 				Потопете се в най-откровените си желания в града на ангелите, където слънцето, знаменитостите и културата се сливат.
 				Разгледайте Холивидския булевард, посетете Грифит парк и обиколете световноизвестния Музей на изкуствата(LACMA).
 				</description>
+				<photo>&imgLA;</photo>
 				<route>
 					<stop>Холивуд</stop>
 					<stop>Бевърли Хилс</stop>
@@ -97,7 +98,6 @@
 					<stop>Обсерватория Грифит</stop>
 					<stop>Сънсет Стрип Авеню</stop>
 				</route>
-				<photo>&imgLA;</photo>
 				<listTourists>
 					<touristName> Никола Георгиев </touristName>
 					<touristName> Дарина Стоянова </touristName>
@@ -112,13 +112,13 @@
 				Египет е страна с богата история и култура, обгърната от мистика и величие. Посетете пирамидите в Гиза, откриййте древните храмове в Луксор и Карнак и се потопете
 				в богатото религиозно и историческо наследство.
 				</description>
+				<photo>&imgEgypt;</photo>
 				<route>
 					<stop>Кайро</stop>
 					<stop>Луксор</stop>
 					<stop>Пирамидите в Гиза и Сфинкса</stop>
 					<stop>Абу Симбел</stop>
 				</route>
-				<photo>&imgEgypt;</photo>
 				<listTourists>
 					<touristName> Ричард Илиев </touristName>
 					<touristName> Леонардо Петров </touristName>
@@ -134,12 +134,12 @@
 				Екскурзията в Япония ще ви отведе в страна, където традицията среща съвременноста. Посетете столицата Токио с нейните светещи реклами
 				и традиционни храмове като Сензо-джи. Япония предлага уникално разнообразие от култура, гастрономия и природа.
 				</description>
+				<photo>&imgJapan;</photo>
 				<route>
 					<stop>Токио</stop>
 					<stop>Киото</stop>
 					<stop>Остров Мияджима</stop>
 				</route>
-				<photo>&imgJapan;</photo>
 				<listTourists>
 					<touristName> Адриана Атанасова </touristName>
 					<touristName> Константин Тодоров </touristName>
@@ -155,12 +155,12 @@
 				Пригответе се за експлозия на сетивата в Индия. Посетете Тадж Махал, опитайте дивите аромати и вкусове на индийската кухня и изживейте
 				цветната култура на Варанаси край светите води на Ганга.
 				</description>
+				<photo>&imgIndia;</photo>
 				<route>
 					<stop>Делхи</stop>
 					<stop>Тадж Махал</stop>
 					<stop>Мумбай</stop>
 				</route>
-				<photo>&imgIndia;</photo>
 				<listTourists>
 					<touristName> Петя Костадинова </touristName>
 					<touristName> Рикардо Тодоров </touristName>
@@ -168,4 +168,25 @@
 				</listTourists>
 			</trip>
 		</trips>
+		<listOfTourists>
+			<tourist t_id="t1" sd_id="2024-02-26"> Пламен Найденов </tourist>
+			<tourist t_id="t1" sd_id="2024-02-26"> Велислава Крумова </tourist>
+			<!-- <touristName> Преслава Андонова </touristName>
+			<touristName> Илия Стоев </touristName>
+			<touristName> Даниела Георгиева </touristName>
+			<touristName> Божидар Абаджиев </touristName>
+			<touristName> Стилиян Стоянов </touristName>
+			<touristName> Гергана Куртева </touristName>
+			<touristName> Никола Георгиев </touristName>
+			<touristName> Дарина Стоянова </touristName>
+			<touristName> Ричард Илиев </touristName>
+			<touristName> Леонардо Петров </touristName>
+			<touristName> Мерилин Иванова </touristName>
+			<touristName> Адриана Атанасова </touristName>
+			<touristName> Константин Тодоров </touristName>
+			<touristName> Радина Косева</touristName>
+			<touristName> Петя Костадинова </touristName>
+			<touristName> Рикардо Тодоров </touristName>
+			<touristName> Николина Димитрова </touristName> -->
+		</listOfTourists>
 </trips_catalog>

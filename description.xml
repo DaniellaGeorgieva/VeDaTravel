@@ -2,13 +2,13 @@
 <?xml-stylesheet type="text/xsl" href="project.xsl"?>
 
 <!DOCTYPE trips_catalog SYSTEM "validation.dtd" [
-	<!ENTITY imgSpain SYSTEM "images/spain.jpg">
-    <!ENTITY imgNorway SYSTEM "images/norway.jpg">
-    <!ENTITY imgNY SYSTEM "images/ny.jpg">
-    <!ENTITY imgLA SYSTEM "images/la.jpg">
-    <!ENTITY imgEgypt SYSTEM "images/egypt.jpg">
-    <!ENTITY imgJapan SYSTEM "images/japan.jpg">
-    <!ENTITY imgIndia SYSTEM "images/india.jpg">
+	<!ENTITY imgSpain SYSTEM "images/spain.jpg" NDATA JPG>
+    <!ENTITY imgNorway SYSTEM "images/norway.jpg" NDATA JPG>
+    <!ENTITY imgNY SYSTEM "images/ny.jpg" NDATA JPG>
+    <!ENTITY imgLA SYSTEM "images/la.jpg" NDATA JPG>
+    <!ENTITY imgEgypt SYSTEM "images/egypt.jpg" NDATA JPG>
+    <!ENTITY imgJapan SYSTEM "images/japan.jpg" NDATA JPG>
+    <!ENTITY imgIndia SYSTEM "images/india.jpg" NDATA JPG>
 ]>
 
 <trips_catalog

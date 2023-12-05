@@ -8,13 +8,14 @@
     <!ELEMENT endDate (#PCDATA)>
     <!ELEMENT price (#PCDATA)>
     <!ELEMENT description (#PCDATA)>
-    <!ELEMENT photo (#PCDATA)>
+    <!ELEMENT photo (ENTITY)>
     <!ELEMENT route (stop+)>
     <!ELEMENT stop (#PCDATA)>
     <!ELEMENT listTourists (touristName+)>
     <!ELEMENT touristName (#PCDATA)>
     <!ELEMENT listOfTourists (tourist+)>
     <!ELEMENT tourist (#PCDATA)>
+    <!NOTATION JPG SYSTEM "image/jpeg">
     
 
     <!ATTLIST trip

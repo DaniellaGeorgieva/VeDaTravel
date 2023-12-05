@@ -1,4 +1,7 @@
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:ns="http://www.w3schools.com" xmlns:xlink="http://www.w3.org/1999/xlink">
+<xsl:stylesheet version="1.0" 
+                xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
+                xmlns:ns="http://www.w3schools.com" 
+                xmlns:xlink="http://www.w3.org/1999/xlink">
     <xsl:template match="/">
         <html>
             <head>
@@ -60,23 +63,24 @@
                 </xsl:for-each>
             </ul>
             <h3>Пътници:</h3>
-            <ul class="tourists">
+            <ol class="tourists">
                 <xsl:for-each select="ns:listTourists/ns:touristName">
                     <li><xsl:value-of select="."/></li>
                 </xsl:for-each>
-            </ul>
-            <xsl:apply-templates select="ns:map" />
+            </ol>
             <h3>Цена: <xsl:value-of select="ns:price"/> лева</h3>
         </div>
         <br />
     </xsl:template>
 
-    <xsl:template match="ns:map">
-        <iframe src="{@href}" title="Embedded Map" width="600" height="400" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </xsl:template>
-
     <xsl:template match="ns:photo">
-        <img src="{@href}" title="Embedded Photo" class="big_image"></img>
+        <img>
+            <xsl:attribute name="src">
+                <xsl:value-of select="."/>
+            </xsl:attribute>
+            <xsl:attribute name="title">Embedded Photo</xsl:attribute>
+            <xsl:attribute name="class">big_image</xsl:attribute>
+        </img>
     </xsl:template>
 
 </xsl:stylesheet>

@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-stylesheet type="text/xsl" href="project.xsl"?>
+
+<!DOCTYPE trips_catalog SYSTEM "validation.dtd" [
+	<!ENTITY imgSpain SYSTEM "images/spain.jpg">
+    <!ENTITY imgNorway SYSTEM "images/norway.jpg">
+    <!ENTITY imgNY SYSTEM "images/ny.jpg">
+    <!ENTITY imgLA SYSTEM "images/la.jpg">
+    <!ENTITY imgEgypt SYSTEM "images/egypt.jpg">
+    <!ENTITY imgJapan SYSTEM "images/japan.jpg">
+    <!ENTITY imgIndia SYSTEM "images/india.jpg">
+]>
 
 <trips_catalog
 		xmlns="http://www.w3schools.com"
@@ -18,12 +27,7 @@
 				изобилие от палми и великолепни  плажове с бял пясък? Да, това е Испания!
 				Палещо слънце, горещи ритми, средиземноморска кухня и луксозни хотели – всичко това ви очаква тук.
 				</description>
-				<map type="simple" 
-				     href="https://maps.app.goo.gl/ohpDJ9tV6ggsAp2M6"
-				     show="embed"/>
-				<photo type="simple" 
-					href="https://m3.netinfo.bg/media/images/49835/49835878/r-orig-orig-ispaniia.jpg"
-					show="embed"/>
+				<photo>&imgSpain;</photo>
 				<route>
 					<stop>Мадрид</stop>
 					<stop>Барселона</stop>
@@ -39,14 +43,9 @@
 				<endDate>2024-07-10</endDate>
 				<price>3990</price>
 				<description>
-				Впуснете се в едно изключително и незабравимо преживяване, посещавайки най-красивите заливи на света - фиордите в Норвегия.
+					Впуснете се в едно изключително и незабравимо преживяване, посещавайки най-красивите заливи на света - фиордите в Норвегия.
 				</description>
-				<map type="simple" 
-				     href="https://maps.app.goo.gl/jHPD5m8MmYFsEUme9"
-				     show="embed"/>
-				<photo type="simple" 
-					href="https://bulgariatravel.bg/dest_data/original/BIG_geiranger_14024810801166.jpg"
-					show="embed"/>
+				<photo>&imgNorway;</photo>
 				<route>
 					<stop>Осло</stop>
 					<stop>Берген</stop>
@@ -67,12 +66,7 @@
 				<description>
 				Изживейте американската мечта и усетете нюйоркския дух, като посетите Статуята на Свободата и Таймс Скуеър. Ню Йорк ви предлага уникален културен и градски опит.
 				</description>
-				<map type="simple" 
-				     href="https://maps.app.goo.gl/hNs1rCPN7Rc81BYx7"
-				     show="embed"/>
-				<photo type="simple" 
-					href="https://cdn2.bohemia.bg/touristsites/832426/6GIIXT.jpg"
-					show="embed"/>
+				<photo>&imgNY;</photo>
 				<route>
 					<stop>Манхатън</stop>
 					<stop>Статуята на свободата</stop>
@@ -96,12 +90,7 @@
 				Потопете се в най-откровените си желания в града на ангелите, където слънцето, знаменитостите и културата се сливат.
 				Разгледайте Холивидския булевард, посетете Грифит парк и обиколете световноизвестния Музей на изкуствата(LACMA).
 				</description>
-				<map type="simple" 
-				     href="https://maps.app.goo.gl/32aNLnuKhwnJjjd1A"
-				     show="embed"/>
-				<photo type="simple" 
-					href="https://nasamnatam.com/pics/1448-0597be8a442a8f77b0ba754d17c2cedc.jpg"
-					show="embed"/>
+				<photo>&imgLA;</photo>
 				<route>
 					<stop>Холивуд</stop>
 					<stop>Бевърли Хилс</stop>
@@ -123,12 +112,7 @@
 				Египет е страна с богата история и култура, обгърната от мистика и величие. Посетете пирамидите в Гиза, откриййте древните храмове в Луксор и Карнак и се потопете
 				в богатото религиозно и историческо наследство.
 				</description>
-				<map type="simple" 
-				     href="https://www.google.com/maps/place/%D0%95%D0%B3%D0%B8%D0%BF%D0%B5%D1%82/@26.9060999,30.8768375,6z/data=!4m6!3m5!1s0x14368976c35c36e9:0x2c45a00925c4c444!8m2!3d26.820553!4d30.802498!16zL20vMDJrNTQ?entry=ttu"
-				     show="embed"/>
-				<photo type="simple" 
-					href="https://eva.bg/media/pr/netpeak/1/Egyptian_Civilization.jpg"
-					show="embed"/>
+				<photo>&imgEgypt;</photo>
 				<route>
 					<stop>Кайро</stop>
 					<stop>Луксор</stop>
@@ -150,12 +134,7 @@
 				Екскурзията в Япония ще ви отведе в страна, където традицията среща съвременноста. Посетете столицата Токио с нейните светещи реклами
 				и традиционни храмове като Сензо-джи. Япония предлага уникално разнообразие от култура, гастрономия и природа.
 				</description>
-				<map type="simple" 
-				     href="https://maps.app.goo.gl/EngSjKqs6ZhxHKQF6"
-				     show="embed"/>
-				<photo type="simple" 
-					href="https://animes.bg/wp-content/uploads/2018/10/BIG_interlax-japan-Custom_144912954011.jpg"
-					show="embed"/>
+				<photo>&imgJapan;</photo>
 				<route>
 					<stop>Токио</stop>
 					<stop>Киото</stop>
@@ -176,12 +155,7 @@
 				Пригответе се за експлозия на сетивата в Индия. Посетете Тадж Махал, опитайте дивите аромати и вкусове на индийската кухня и изживейте
 				цветната култура на Варанаси край светите води на Ганга.
 				</description>
-				<map type="simple" 
-				     href="https://www.openstreetmap.org/relation/304716"
-				     show="embed"/>
-				<photo type="simple" 
-					href="https://trud.bg/public/images/articles/2021-11/India-1_4321791391391731664_big.jpg"
-					show="embed"/>
+				<photo>&imgIndia;</photo>
 				<route>
 					<stop>Делхи</stop>
 					<stop>Тадж Махал</stop>
@@ -194,4 +168,25 @@
 				</listTourists>
 			</trip>
 		</trips>
+		<listOfTourists>
+			<tourist t_id="t1" sd_id="2024-02-26"> Пламен Найденов </tourist>
+			<tourist t_id="t1" sd_id="2024-02-26"> Велислава Крумова </tourist>
+			<!-- <touristName> Преслава Андонова </touristName>
+			<touristName> Илия Стоев </touristName>
+			<touristName> Даниела Георгиева </touristName>
+			<touristName> Божидар Абаджиев </touristName>
+			<touristName> Стилиян Стоянов </touristName>
+			<touristName> Гергана Куртева </touristName>
+			<touristName> Никола Георгиев </touristName>
+			<touristName> Дарина Стоянова </touristName>
+			<touristName> Ричард Илиев </touristName>
+			<touristName> Леонардо Петров </touristName>
+			<touristName> Мерилин Иванова </touristName>
+			<touristName> Адриана Атанасова </touristName>
+			<touristName> Константин Тодоров </touristName>
+			<touristName> Радина Косева</touristName>
+			<touristName> Петя Костадинова </touristName>
+			<touristName> Рикардо Тодоров </touristName>
+			<touristName> Николина Димитрова </touristName> -->
+		</listOfTourists>
 </trips_catalog>

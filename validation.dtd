@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <!ELEMENT trips_catalog (trips, listOfTourists)>
+    <!ELEMENT trips (trip+)>
+    <!ELEMENT trip (title, startDate, endDate, price, description, photo, route, listTourists)>
+    <!ELEMENT title (#PCDATA)>
+    <!ELEMENT startDate (#PCDATA)>
+    <!ELEMENT endDate (#PCDATA)>
+    <!ELEMENT price (#PCDATA)>
+    <!ELEMENT description (#PCDATA)>
+    <!ELEMENT photo (#PCDATA)>
+    <!ELEMENT route (stop+)>
+    <!ELEMENT stop (#PCDATA)>
+    <!ELEMENT listTourists (touristName+)>
+    <!ELEMENT touristName (#PCDATA)>
+    <!ELEMENT listOfTourists (tourist+)>
+    <!ELEMENT tourist (#PCDATA)>
+    
+
+    <!ATTLIST trip
+        id ID #REQUIRED
+        region CDATA #REQUIRED
+        destination CDATA #REQUIRED
+    >
+
+    <!ATTLIST tourist
+        t_id ID #REQUIRED
+        sd_id CDATA #REQUIRED
+    >
+    
+    <!ATTLIST trips_catalog
+        xmlns CDATA #FIXED 'http://www.w3schools.com'
+        xmlns:xlink CDATA #FIXED 'http://www.w3.org/1999/xlink'
+        xmlns:xsi CDATA #FIXED 'http://www.w3.org/2001/XMLSchema-instance'
+        xsi:schemaLocation CDATA #FIXED 'http://www.w3schools.com validation.xsd'
+    >
+
+    

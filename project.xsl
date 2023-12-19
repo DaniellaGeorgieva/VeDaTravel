@@ -53,7 +53,7 @@
                     <xsl:apply-templates select="ns:photo" />
                 </td>
                 <td>
-                    <p><xsl:value-of select="ns:description" /></p>
+                    <p class="desc"><xsl:value-of select="ns:description" /></p>
                 </td>
             </table>
             <h3>Маршрут:</h3>
@@ -64,7 +64,7 @@
             </ul>
             <h3>Пътници:</h3>
             <ol class="tourists">
-                <xsl:for-each select="ns:listTourists/ns:touristName">
+                <xsl:for-each select="ns:listOfTourists/ns:touristName">
                     <li><xsl:value-of select="."/></li>
                 </xsl:for-each>
             </ol>
@@ -74,9 +74,10 @@
     </xsl:template>
 
     <xsl:template match="ns:photo">
+        <p> <xsl:value-of select="@url"/></p>
         <img>
             <xsl:attribute name="src">
-                <xsl:value-of select="."/>
+                <xsl:value-of select="@url"/>
             </xsl:attribute>
             <xsl:attribute name="title">Embedded Photo</xsl:attribute>
             <xsl:attribute name="class">big_image</xsl:attribute>

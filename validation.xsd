@@ -71,7 +71,6 @@
 					</xs:restriction>
 				</xs:simpleType>
 			</xs:element>
-			<xs:element name="photo" type="xs:anyURI"/>
 			<!-- <xs:element name="map" type="xs:string"/> -->
 			<xs:element name="stop" type="xs:string"/>
 			<xs:element name="touristName">
@@ -117,6 +116,13 @@
 					<xs:sequence>
 						<xs:element ref="trip" maxOccurs="unbounded"/>
 					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+
+
+			<xs:element name="photo">
+				<xs:complexType>
+					<xs:attribute name="url" type="xs:anyURI" use="required"/>
 				</xs:complexType>
 			</xs:element>
 			

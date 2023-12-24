@@ -8,7 +8,7 @@
     <!ELEMENT endDate (#PCDATA)>
     <!ELEMENT price (#PCDATA)>
     <!ELEMENT description (#PCDATA)>
-    <!ELEMENT photo (ENTITY)>
+    <!ELEMENT photo EMPTY>
     <!ELEMENT route (stop+)>
     <!ELEMENT stop (#PCDATA)>
     <!ELEMENT listTourists (touristName+)>
@@ -27,6 +27,10 @@
     <!ATTLIST tourist
         t_id ID #REQUIRED
         sd_id CDATA #REQUIRED
+    >
+
+    <!ATTLIST photo 
+        url ENTITY #REQUIRED
     >
     
     <!ATTLIST trips_catalog

@@ -8,7 +8,9 @@
     <!ELEMENT endDate (#PCDATA)>
     <!ELEMENT price (#PCDATA)>
     <!ELEMENT description (#PCDATA)>
-    <!ELEMENT photo EMPTY>
+    <!ELEMENT photo (src)>
+    <!ELEMENT src EMPTY>
+    <!ATTLIST src url ENTITY #REQUIRED>
     <!ELEMENT route (stop+)>
     <!ELEMENT stop (#PCDATA)>
     <!ELEMENT listTourists (touristName+)>
@@ -16,7 +18,6 @@
     <!ELEMENT listOfTourists (tourist+)>
     <!ELEMENT tourist (#PCDATA)>
     <!NOTATION JPG SYSTEM "image/jpeg">
-    
 
     <!ATTLIST trip
         id ID #REQUIRED
@@ -27,10 +28,6 @@
     <!ATTLIST tourist
         t_id ID #REQUIRED
         sd_id CDATA #REQUIRED
-    >
-
-    <!ATTLIST photo 
-        url ENTITY #REQUIRED
     >
     
     <!ATTLIST trips_catalog

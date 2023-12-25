@@ -122,7 +122,13 @@
 
 			<xs:element name="photo">
 				<xs:complexType>
-					<xs:attribute name="url" type="xs:anyURI" use="required"/>
+					<xs:sequence>
+                		<xs:element name="src">
+							<xs:complexType>
+								<xs:attribute name="url" type="xs:string"/>
+							</xs:complexType>
+						</xs:element>
+            		</xs:sequence>
 				</xs:complexType>
 			</xs:element>
 			

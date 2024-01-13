@@ -77,13 +77,6 @@
 						</stopInfo>
 					</stop>
 				</route>
-				<listTourists>
-					<touristName> Ванеса Григорова </touristName>
-					<touristName> Милен Григоров </touristName>
-					<touristName> Румен Илиев </touristName>
-					<touristName> Искрена Дончева </touristName>
-					<touristName> Рая Спасимирова </touristName>
-				</listTourists>
 			</trip>
 			<trip id="t2" region="Европа" destination="Норвегия">
 				<title>Норвегия - впечатляващи фиордове, вековни планини и северно сияние</title>
@@ -149,13 +142,6 @@
 						</stopInfo>
 					</stop>
 					</route>
-				
-				<listTourists>
-					<touristName> Пламен Найденов </touristName>
-					<touristName> Велислава Крумова </touristName>
-					<touristName> Преслава Андонова </touristName>
-					<touristName> Илия Стоев </touristName>
-				</listTourists>
 			</trip>
 			<trip id="t3" region="Северна Америка" destination="Ню Йорк">
 				<title>Забавления в Голямата ябълка - Ню Йорк, САЩ</title>
@@ -220,13 +206,6 @@
 						</stopInfo>
 					</stop>
 					</route>
-				
-				<listTourists>
-					<touristName> Даниела Георгиева </touristName>
-					<touristName> Божидар Абаджиев </touristName>
-					<touristName> Стилиян Стоянов </touristName>
-					<touristName> Гергана Куртева </touristName>
-				</listTourists>
 			</trip>
 			<trip id="t4" region="Северна Америка" destination="Лос Анджелис">
 				<title>Лос Анджелис - градът на мечтите и звездите</title>
@@ -286,11 +265,6 @@
 						</stopInfo>
 					</stop>
 					</route>
-				
-				<listTourists>
-					<touristName> Никола Георгиев </touristName>
-					<touristName> Дарина Стоянова </touristName>
-				</listTourists>
 			</trip>
 			<trip id="t5" region="Африка" destination="Египет">
 				<title>На сафари в Египет</title>
@@ -362,12 +336,6 @@
 						</stopInfo>
 					</stop>
 				</route>
-				
-				<listTourists>
-					<touristName> Ричард Илиев </touristName>
-					<touristName> Леонардо Петров </touristName>
-					<touristName> Мерилин Иванова </touristName>
-				</listTourists>
 			</trip>
 			<trip id="t6" region="Азия" destination="Япония">
 				<title>Япония - страната на изгряващото слънце</title>
@@ -421,12 +389,6 @@
 						</stopInfo>
 					</stop>
 				</route>
-				
-				<listTourists>
-					<touristName> Адриана Атанасова </touristName>
-					<touristName> Константин Тодоров </touristName>
-					<touristName> Радина Косева</touristName>
-				</listTourists>
 			</trip>
 			<trip id="t7" region="Азия" destination="Индия">
 				<title>Магията на Индия</title>
@@ -487,24 +449,46 @@
 						</stopInfo>
 					</stop>
 				</route>
-				
-				<listTourists>
-					<touristName> Петя Костадинова </touristName>
-					<touristName> Рикардо Тодоров </touristName>
-					<touristName> Николина Димитрова </touristName>
-				</listTourists>
 			</trip>
 		</trips>
 		<listOfTourists>
-			<tourists t_id="t7">
-				<tName>Петя Костадинова</tName>
-				<tName> Рикардо Тодоров </tName>
-				<tName> Николина Димитрова </tName>
+			<tourists t_id="t1">
+				<tName> Ванеса Григорова </tName>
+				<tName> Милен Григоров </tName>
+				<tName> Румен Илиев </tName>
+				<tName> Искрена Дончева </tName>
+				<tName> Рая Спасимирова </tName>
+			</tourists>
+			<tourists t_id="t2">
+				<tName> Пламен Найденов </tName>
+				<tName> Велислава Крумова </tName>
+				<tName> Преслава Андонова </tName>
+				<tName> Илия Стоев </tName>
+			</tourists>
+			<tourists t_id="t3">
+				<tName> Даниела Георгиева </tName>
+				<tName> Божидар Абаджиев </tName>
+				<tName> Стилиян Стоянов </tName>
+				<tName> Гергана Куртева </tName>
+			</tourists>
+			<tourists t_id="t4">
+				<tName> Никола Георгиев </tName>
+				<tName> Дарина Стоянова </tName>
+			</tourists>
+			<tourists t_id="t5">
+				<tName> Ричард Илиев </tName>
+				<tName> Леонардо Петров </tName>
+				<tName> Мерилин Иванова </tName>
 			</tourists>
 			<tourists t_id="t6">
 				<tName> Адриана Атанасова</tName>
 				<tName> Константин Тодоров </tName>
 				<tName> Радина Косева</tName>
+			</tourists>
+			<tourists t_id="t7">
+				<tName>Петя Костадинова</tName>
+				<tName> Рикардо Тодоров </tName>
+				<tName> Николина Димитрова </tName>
 			</tourists>
 		</listOfTourists>
 </trips_catalog>

@@ -7,11 +7,6 @@
            elementFormDefault="qualified"
            attributeFormDefault="unqualified">
 			
-			<!-- <xs:keyref name="tripRef" refer="keyTrip">
-				<xs:selector xpath="trips_catalog/trips/trip"/>
-				<xs:field xpath="region"/>
-			</xs:keyref> -->
-			
 			<!-- Attributes of trip - region -->
 			<xs:simpleType name="region">
 				<xs:restriction base="xs:string">
@@ -62,8 +57,6 @@
 						</xs:restriction>
 				</xs:simpleType>
 			</xs:element>
-
-
 
 			<!-- Complex Elements-->
 			<xs:element name="trips_catalog">
@@ -133,37 +126,34 @@
 								</xs:sequence>
 							</xs:complexType>
 						</xs:element>
-						<xs:element name="listTourists">
-							<xs:complexType>
-								<xs:sequence>
-								    <xs:element ref="touristName" maxOccurs="unbounded"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
 					</xs:sequence>
 					<xs:attribute name="id" type="id_trip" use="required"/>
 					<xs:attribute name="region" type="region" use="required"/>
 					<xs:attribute name="destination" type="destination_trip" use="required"/>
 				</xs:complexType>
 				<xs:key name="keyTrip">
-				        <xs:selector xpath="trip"/>
-				        <xs:field xpath="@id"/>
-				        <xs:field xpath="@region"/>
-				        <xs:field xpath="@destination"/>
+					<xs:selector xpath="trip"/>
+					<xs:field xpath="@id"/>
+					<xs:field xpath="@region"/>
+					<xs:field xpath="@destination"/>
 			    </xs:key>
 				<xs:unique name="tripUnique">
-						<xs:selector xpath="trip"/>
-						<xs:field xpath="@id"/>
-						<xs:field xpath="@destination"/>
-					</xs:unique>
+					<xs:selector xpath="trip"/>
+					<xs:field xpath="@id"/>
+					<xs:field xpath="@destination"/>
+				</xs:unique>
 			</xs:element>
-
 			<xs:element name="listOfTourists">
 				<xs:complexType>
 					<xs:sequence>
 						<xs:element ref="tourists" maxOccurs="unbounded"/>
 					</xs:sequence>
 				</xs:complexType>
+				<xs:keyref name="tripRef" refer="keyTrip">
+					<xs:selector xpath="trips_catalog/trips/trip"/>
+					<xs:field xpath="@id"/>
+					<xs:field xpath="@region"/>
+					<xs:field xpath="@destination"/>
+				</xs:keyref>
 			</xs:element>
-			
 </xs:schema>

@@ -1,7 +1,6 @@
 body {
-    background-color: #f7e1d7;
-    margin: 0;
-    font-family: 'Georgia', serif;
+    background-color: #ffe6e6;
+    font-family: 'Lora';
 }
 
 .container {
@@ -15,32 +14,45 @@ h1 {
     text-align: center;
 }
 
+h2{
+    text-align: center;
+}
+
 table {
     border-collapse: collapse;
     width: 100%;
     margin-top: 20px;
 }
 
-td, th {
+th {
+    background-color: #d9d9d9;
+    color: #4a5759;
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+th:hover {
+    background-color: #344044;
+    color: #fff;
+    cursor: pointer;
+}
+
+td {
     color: #4a5759;
     text-align: left;
-    padding: 10px;
+    padding: 12px;
+    border: 1px solid #ccc;
 }
 
-th {
-    background-color: #eaeaea;
-}
-
-img {
+.logo {
     width: 100px;
     height: 30px;
 }
+
 .big_image{
     width: 600px;
     height: 400px;
-}
-ul {
-    list-style: square;
 }
 
 .trip {
@@ -60,23 +72,44 @@ ul {
     font-style: italic;
 }
 
+.trip td{
+    color: #4a5759;
+    text-align: left;
+    padding: 12px;
+    border: 0px;
+}
+
 .details {
     display: flex;
     align-items: center;
 }
 .route, .tourists {
     margin-top: 10px;
+    font-family: 'Lora';
 }
 h3 {
     color: #4a5759;
     
 }
-li{
-    color: #4a5759;
-    line-height: 1.6;
+
+.decoration{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-color: #f5efef; 
+    font-size: 18px;
+    font-family: 'Lora';
+    color: #2a4a4f;
 }
 
-p {
+.desc{
+    color: #4a5759; /* Default text color */
+    font-family: 'Lora', serif;
+    font-size: 17px;
     line-height: 1.6;
-    font-style: italic;
 }

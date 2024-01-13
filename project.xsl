@@ -14,7 +14,7 @@
             </head>
             <body>
                 <div class="container">
-                    <h1><img class="logo" src="logo.png"/> Каталог на екскурзии</h1>
+                    <h1><img class="logo" src="logo.png"/> Каталог на екскурзии <img class="logo" src="logo.png"/></h1>
                     <table id="myTable">
                         <tr>
                             <th onclick="sortTable(0)">Дестинация</th>
@@ -41,8 +41,22 @@
                     </table>
                 </div>
                 <xsl:apply-templates select="//ns:trip" />
+                <h2>Списък с туристи по дестинации</h2>
+                <xsl:apply-templates select="//ns:tourists" />
             </body>
         </html>
+    </xsl:template>
+
+    <xsl:template match="//ns:tourists">
+        <h3> <xsl:value-of select="//ns:trip[@id = current()/@t_id]/@destination"/> </h3>
+
+        <ol class="tourists">
+            <xsl:for-each select="ns:tName">
+                <li>
+                    <xsl:value-of select="."/>
+                </li>
+            </xsl:for-each>
+        </ol>
     </xsl:template>
 
     <xsl:template match="ns:trip">
@@ -50,7 +64,7 @@
             <h2><xsl:value-of select="ns:title" /></h2>
             <p class="date">Дати: <xsl:value-of select="ns:startDate" /> до <xsl:value-of select="ns:endDate" /></p>
             <table>
-                <td class="test">
+                <td>
                     <xsl:apply-templates select="ns:photo/ns:src" />
                 </td>
                 <td>
@@ -68,12 +82,6 @@
                     </div>
                 </xsl:for-each>
             </ul>
-            <h3>Пътници:</h3>
-            <ol class="desc">
-                <xsl:for-each select="ns:listTourists/ns:touristName">
-                    <li><xsl:value-of select="."/></li>
-                </xsl:for-each>
-            </ol>
             <h3>Цена: <xsl:value-of select="ns:price"/> лева</h3>
         </div>
         <br />

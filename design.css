@@ -1,5 +1,5 @@
 body {
-    background-color: #ffe6e6;
+    background-color: #fff3e6;
     font-family: 'Lora';
 }
 
@@ -25,7 +25,7 @@ table {
 }
 
 th {
-    background-color: #d9d9d9;
+    background-color: #ffe6cc;
     color: #4a5759;
     padding: 12px;
     text-align: left;
@@ -33,7 +33,7 @@ th {
 }
 
 th:hover {
-    background-color: #344044;
+    background-color: #ffc180;
     color: #fff;
     cursor: pointer;
 }
@@ -63,8 +63,8 @@ td {
     border-radius: 5px;
 }
 
-.trip h2 {
-    color: #2a4a4f;
+h2 {
+    color: #4a5759;
 }
 
 .trip p.date {
@@ -101,10 +101,15 @@ h3 {
     margin-bottom: 10px;
     cursor: pointer;
     transition: background-color 0.3s;
-    background-color: #f5efef; 
+    background-color: #fff3e6; 
     font-size: 18px;
     font-family: 'Lora';
     color: #2a4a4f;
+}
+
+.decoration:hover {
+    background-color: #ffdab3;
+    color: #4a5759;
 }
 
 .desc{
@@ -113,3 +118,18 @@ h3 {
     font-size: 17px;
     line-height: 1.6;
 }
+
+
+ol.tourists li {
+    padding: 10px;
+    margin: 5px 0;
+    font-family: 'Lora';
+    font-size: 17px;
+    color: #4a5759;
+}
+
+ol.tourists li:hover {
+    background-color: #ffdab3; /* Change to your desired hover background color */
+    cursor: pointer;
+}
+

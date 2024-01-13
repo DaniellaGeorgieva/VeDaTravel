@@ -302,7 +302,4 @@
 				</listTourists>
 			</trip>
 		</trips>
-		<listOfTourists>
-			<tourist t_id="t1" sd_id=""></tourist>
-		</listOfTourists>
 </trips_catalog>

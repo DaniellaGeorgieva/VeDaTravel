@@ -55,7 +55,6 @@
 					</xs:restriction>
 				</xs:simpleType>
 			</xs:element>
-			<xs:element name="stop" type="xs:string"/>
 			<xs:element name="touristName">
 				<xs:simpleType>
 						<xs:restriction base="xs:string">
@@ -63,11 +62,15 @@
 						</xs:restriction>
 				</xs:simpleType>
 			</xs:element>
-			
+
+
+
+			<!-- Complex Elements-->
 			<xs:element name="trips_catalog">
 				<xs:complexType>
 					<xs:sequence>
 						<xs:element ref="trips"/>
+						<xs:element ref="listOfTourists"/>
 					</xs:sequence>
 				</xs:complexType> 
 				<xs:key name="keyTrips">
@@ -84,7 +87,6 @@
 				</xs:complexType>
 			</xs:element>
 
-
 			<xs:element name="photo">
 				<xs:complexType>
 					<xs:sequence>
@@ -94,6 +96,24 @@
 							</xs:complexType>
 						</xs:element>
             		</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+
+			<xs:element name="stop">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="stopName" type="xs:string"/>
+						<xs:element name="stopInfo" type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+
+			<xs:element name="tourists">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="tName" type="xs:string" maxOccurs="unbounded"/>
+					</xs:sequence>
+					<xs:attribute name="t_id"  use="required" type="xs:IDREF"/>
 				</xs:complexType>
 			</xs:element>
 			
@@ -136,6 +156,14 @@
 						<xs:field xpath="@id"/>
 						<xs:field xpath="@destination"/>
 					</xs:unique>
+			</xs:element>
+
+			<xs:element name="listOfTourists">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element ref="tourists" maxOccurs="unbounded"/>
+					</xs:sequence>
+				</xs:complexType>
 			</xs:element>
 			
 </xs:schema>

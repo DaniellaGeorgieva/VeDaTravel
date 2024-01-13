@@ -495,4 +495,16 @@
 				</listTourists>
 			</trip>
 		</trips>
+		<listOfTourists>
+			<tourists t_id="t7">
+				<tName>Петя Костадинова</tName>
+				<tName> Рикардо Тодоров </tName>
+				<tName> Николина Димитрова </tName>
+			</tourists>
+			<tourists t_id="t6">
+				<tName> Адриана Атанасова</tName>
+				<tName> Константин Тодоров </tName>
+				<tName> Радина Косева</tName>
+			</tourists>
+		</listOfTourists>
 </trips_catalog>

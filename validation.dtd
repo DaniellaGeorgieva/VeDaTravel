@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-    <!ELEMENT trips_catalog (trips)>
+    <!ELEMENT trips_catalog (trips, listOfTourists)>
     <!ELEMENT trips (trip+)>
     <!ELEMENT trip (title, startDate, endDate, price, description, photo, route, listTourists)>
     <!ELEMENT title (#PCDATA)>
@@ -12,9 +12,15 @@
     <!ELEMENT src EMPTY>
     <!ATTLIST src url ENTITY #REQUIRED>
     <!ELEMENT route (stop+)>
-    <!ELEMENT stop (#PCDATA)>
+    <!ELEMENT stop (stopName, stopInfo)>
+    <!ELEMENT stopName (#PCDATA)>
+    <!ELEMENT stopInfo (#PCDATA)>
     <!ELEMENT listTourists (touristName+)>
     <!ELEMENT touristName (#PCDATA)>
+    <!ELEMENT listOfTourists (tourists+)>
+    <!ELEMENT tourists (tName+)>
+    <!ELEMENT tName (#PCDATA)>
+    <!ATTLIST tourists t_id IDREF #REQUIRED>
     <!NOTATION JPG SYSTEM "image/jpeg">
 
     <!ATTLIST trip

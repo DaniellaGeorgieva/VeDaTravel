@@ -10,10 +10,11 @@
                 <script src="scripts/script.js" defer="defer"></script>
                 <script src="scripts/dateSort.js" defer="defer"></script>
                 <script src="scripts/priceSort.js" defer="defer"></script>
+                <script src="scripts/displayText.js" defer="defer"></script>
             </head>
             <body>
                 <div class="container">
-                    <h1><img src="logo.png" alt="Logo"/> Каталог на екскурзии</h1>
+                    <h1><img class="logo" src="logo.png"/> Каталог на екскурзии</h1>
                     <table id="myTable">
                         <tr>
                             <th onclick="sortTable(0)">Дестинация</th>
@@ -49,21 +50,26 @@
             <h2><xsl:value-of select="ns:title" /></h2>
             <p class="date">Дати: <xsl:value-of select="ns:startDate" /> до <xsl:value-of select="ns:endDate" /></p>
             <table>
-                <td>
+                <td class="test">
                     <xsl:apply-templates select="ns:photo/ns:src" />
                 </td>
                 <td>
                     <p class="desc"><xsl:value-of select="ns:description" /></p>
                 </td>
             </table>
-            <h3>Маршрут:</h3>
-            <ul class="route">
+            <h2>Маршрут</h2>
+            <ul>
                 <xsl:for-each select="ns:route/ns:stop">
-                    <li><xsl:value-of select="."/></li>
+                    <li class="decoration" onclick="displayText(this)">
+                        <xsl:value-of select="ns:stopName"/>
+                    </li>
+                    <div class="textField" style="display: none;">
+                        <p class="desc"><xsl:value-of select="ns:stopInfo"/></p>
+                    </div>
                 </xsl:for-each>
             </ul>
             <h3>Пътници:</h3>
-            <ol class="tourists">
+            <ol class="desc">
                 <xsl:for-each select="ns:listTourists/ns:touristName">
                     <li><xsl:value-of select="."/></li>
                 </xsl:for-each>
@@ -74,7 +80,7 @@
     </xsl:template>
 
     <xsl:template match="ns:photo/ns:src">  
-        <img class="big_image" src="{unparsed-entity-uri(@url)}" alt="ERROR"/> 
+        <img class="big_image" src="{unparsed-entity-uri(@url)}"/> 
     </xsl:template>
 
 </xsl:stylesheet>

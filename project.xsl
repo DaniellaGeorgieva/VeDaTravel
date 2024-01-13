@@ -50,7 +50,7 @@
             <p class="date">Дати: <xsl:value-of select="ns:startDate" /> до <xsl:value-of select="ns:endDate" /></p>
             <table>
                 <td>
-                    <xsl:apply-templates select="ns:photo" />
+                    <xsl:apply-templates select="ns:photo/ns:src" />
                 </td>
                 <td>
                     <p class="desc"><xsl:value-of select="ns:description" /></p>
@@ -64,7 +64,7 @@
             </ul>
             <h3>Пътници:</h3>
             <ol class="tourists">
-                <xsl:for-each select="ns:listOfTourists/ns:touristName">
+                <xsl:for-each select="ns:listTourists/ns:touristName">
                     <li><xsl:value-of select="."/></li>
                 </xsl:for-each>
             </ol>
@@ -73,15 +73,8 @@
         <br />
     </xsl:template>
 
-    <xsl:template match="ns:photo">
-        <p> <xsl:value-of select="@url"/></p>
-        <img>
-            <xsl:attribute name="src">
-                <xsl:value-of select="@url"/>
-            </xsl:attribute>
-            <xsl:attribute name="title">Embedded Photo</xsl:attribute>
-            <xsl:attribute name="class">big_image</xsl:attribute>
-        </img>
+    <xsl:template match="ns:photo/ns:src">  
+        <img class="big_image" src="{unparsed-entity-uri(@url)}" alt="ERROR"/> 
     </xsl:template>
 
 </xsl:stylesheet>

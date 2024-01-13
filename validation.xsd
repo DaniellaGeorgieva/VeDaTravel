@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
            xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -42,22 +42,6 @@
 					<xs:pattern value="([A-Z][a-z]+)+"/>
 				</xs:restriction>
 			</xs:simpleType>
-
-			<!-- Attributes of map -->
-			<xs:simpleType name="hrefType">
-				<xs:restriction base="xs:anyURI"/>
-			</xs:simpleType>
-
-			<xs:simpleType name="mapType">
-				<xs:restriction base="xs:string"/>
-			</xs:simpleType>
-
-			<xs:simpleType name="showType">
-				<xs:restriction base="xs:string">
-					<xs:enumeration value="embed"/>
-					<xs:enumeration value="simple"/>
-				</xs:restriction>
-			</xs:simpleType>
 			
 			<!-- Simple Elements -->
 			<xs:element name="title" type="xs:string"/>
@@ -71,7 +55,6 @@
 					</xs:restriction>
 				</xs:simpleType>
 			</xs:element>
-			<!-- <xs:element name="map" type="xs:string"/> -->
 			<xs:element name="stop" type="xs:string"/>
 			<xs:element name="touristName">
 				<xs:simpleType>
@@ -80,31 +63,13 @@
 						</xs:restriction>
 				</xs:simpleType>
 			</xs:element>
-			<!-- <xs:element name="tourist"/> -->
-			<!-- Complex elements -->
 			
 			<xs:element name="trips_catalog">
-				<!-- <xs:complexType>
+				<xs:complexType>
 					<xs:sequence>
 						<xs:element ref="trips"/>
-						<xs:element name="listOfTourists">
-						<xs:complexType>
-							<xs:sequence>
-								<xs:element name="tourist" maxOccurs="unbounded">
-									<xs:complexType>
-										<xs:simpleContent>
-											<xs:extension base="xs:string">
-												<xs:attribute name="t_id" type="xs:IDREF" use="required"/>
-												<xs:attribute name="sd_id" type="xs:IDREF" use="required"/>
-											</xs:extension>
-										</xs:simpleContent>
-									</xs:complexType>
-								</xs:element>
-							</xs:sequence>
-						</xs:complexType>
-					</xs:element>
 					</xs:sequence>
-				</xs:complexType> -->
+				</xs:complexType> 
 				<xs:key name="keyTrips">
 					<xs:selector xpath="trips_catalog"/>
 					<xs:field xpath="trips/trip"/>
@@ -141,13 +106,6 @@
 						<xs:element ref="price"/>
 						<xs:element ref="description"/>
 						<xs:element ref="photo"/>
-						<!-- <xs:element name="map">
-							<xs:complexType>
-									<xs:attribute name="type" type="mapType" use="required"/>
-									<xs:attribute name="href" type="hrefType" use="required"/>
-									<xs:attribute name="show" type="showType" use="required"/>
-							</xs:complexType>
-						</xs:element> -->
 						<xs:element name="route">
 							<xs:complexType>
 								<xs:sequence> 
@@ -155,12 +113,6 @@
 								</xs:sequence>
 							</xs:complexType>
 						</xs:element>
-						
-						<!-- <xs:element name="photo">
-							<xs:complexType>
-								<xs:attribute name="id" type="xs:ID" use="required"/>
-							</xs:complexType>
-						</xs:element> -->
 						<xs:element name="listTourists">
 							<xs:complexType>
 								<xs:sequence>

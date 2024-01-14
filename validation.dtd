@@ -19,6 +19,7 @@
     <!ELEMENT tourists (tName+)>
     <!ELEMENT tName (#PCDATA)>
     <!ATTLIST tourists t_id IDREF #REQUIRED>
+    <!ATTLIST tourists t_startDate NMTOKEN #REQUIRED>
     <!NOTATION JPG SYSTEM "image/jpeg">
 
     <!ATTLIST trip

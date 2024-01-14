@@ -107,6 +107,7 @@
 						<xs:element name="tName" type="xs:string" maxOccurs="unbounded"/>
 					</xs:sequence>
 					<xs:attribute name="t_id"  use="required" type="xs:IDREF"/>
+					<xs:attribute name="t_startDate"  use="required" type="xs:NMTOKEN"/>
 				</xs:complexType>
 			</xs:element>
 			
@@ -134,14 +135,18 @@
 				<xs:key name="keyTrip">
 					<xs:selector xpath="trip"/>
 					<xs:field xpath="@id"/>
-					<xs:field xpath="@region"/>
-					<xs:field xpath="@destination"/>
+					<xs:field xpath="startDate"/>
 			    </xs:key>
 				<xs:unique name="tripUnique">
 					<xs:selector xpath="trip"/>
 					<xs:field xpath="@id"/>
 					<xs:field xpath="@destination"/>
 				</xs:unique>
+				<xs:keyref name="tripRef" refer="keyTrip">
+					<xs:selector xpath="tourists"/>
+					<xs:field xpath="@t_id"/>
+					<xs:field xpath="@t_startDate"/>
+				</xs:keyref>
 			</xs:element>
 			<xs:element name="listOfTourists">
 				<xs:complexType>
@@ -149,11 +154,5 @@
 						<xs:element ref="tourists" maxOccurs="unbounded"/>
 					</xs:sequence>
 				</xs:complexType>
-				<xs:keyref name="tripRef" refer="keyTrip">
-					<xs:selector xpath="trips_catalog/trips/trip"/>
-					<xs:field xpath="@id"/>
-					<xs:field xpath="@region"/>
-					<xs:field xpath="@destination"/>
-				</xs:keyref>
 			</xs:element>
 </xs:schema>

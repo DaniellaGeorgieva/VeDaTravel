@@ -452,40 +452,40 @@
 			</trip>
 		</trips>
 		<listOfTourists>
-			<tourists t_id="t1">
+			<tourists t_id="t1" t_startDate="2024-02-26">
 				<tName> Ванеса Григорова </tName>
 				<tName> Милен Григоров </tName>
 				<tName> Румен Илиев </tName>
 				<tName> Искрена Дончева </tName>
 				<tName> Рая Спасимирова </tName>
 			</tourists>
-			<tourists t_id="t2">
+			<tourists t_id="t2" t_startDate="2024-07-04">
 				<tName> Пламен Найденов </tName>
 				<tName> Велислава Крумова </tName>
 				<tName> Преслава Андонова </tName>
 				<tName> Илия Стоев </tName>
 			</tourists>
-			<tourists t_id="t3">
+			<tourists t_id="t3" t_startDate="2024-08-05">
 				<tName> Даниела Георгиева </tName>
 				<tName> Божидар Абаджиев </tName>
 				<tName> Стилиян Стоянов </tName>
 				<tName> Гергана Куртева </tName>
 			</tourists>
-			<tourists t_id="t4">
+			<tourists t_id="t4" t_startDate="2024-08-02">
 				<tName> Никола Георгиев </tName>
 				<tName> Дарина Стоянова </tName>
 			</tourists>
-			<tourists t_id="t5">
+			<tourists t_id="t5" t_startDate="2024-05-03">
 				<tName> Ричард Илиев </tName>
 				<tName> Леонардо Петров </tName>
 				<tName> Мерилин Иванова </tName>
 			</tourists>
-			<tourists t_id="t6">
+			<tourists t_id="t6" t_startDate="2024-04-12">
 				<tName> Адриана Атанасова</tName>
 				<tName> Константин Тодоров </tName>
 				<tName> Радина Косева</tName>
 			</tourists>
-			<tourists t_id="t7">
+			<tourists t_id="t7" t_startDate="2024-09-12">
 				<tName>Петя Костадинова</tName>
 				<tName> Рикардо Тодоров </tName>
 				<tName> Николина Димитрова </tName>

@@ -10,29 +10,34 @@
     <!ELEMENT description (#PCDATA)>
     <!ELEMENT photo (src)>
     <!ELEMENT src EMPTY>
-    <!ATTLIST src url ENTITY #REQUIRED>
     <!ELEMENT route (stop+)>
     <!ELEMENT stop (stopName, stopInfo)>
     <!ELEMENT stopName (#PCDATA)>
     <!ELEMENT stopInfo (#PCDATA)>
     <!ELEMENT listOfTourists (tourists+)>
-    <!ELEMENT tourists (tName+)>
+    <!ELEMENT tourists (tName*)>
     <!ELEMENT tName (#PCDATA)>
-    <!ATTLIST tourists t_id IDREF #REQUIRED>
-    <!ATTLIST tourists t_startDate NMTOKEN #REQUIRED>
-    <!NOTATION JPG SYSTEM "image/jpeg">
+    <!NOTATION JPG PUBLIC "image/jpeg">
+    
+    <!ATTLIST trips_catalog
+        xmlns CDATA #FIXED 'http://www.w3schools.com'
+        xmlns:xs CDATA #FIXED 'http://www.w3.org/2001/XMLSchema-instance'
+        xs:schemaLocation CDATA #FIXED 'http://www.w3schools.com validation.xsd'
+    >
 
     <!ATTLIST trip
         id ID #REQUIRED
         region CDATA #REQUIRED
         destination CDATA #REQUIRED
     >
-    
-    <!ATTLIST trips_catalog
-        xmlns CDATA #FIXED 'http://www.w3schools.com'
-        xmlns:xlink CDATA #FIXED 'http://www.w3.org/1999/xlink'
-        xmlns:xsi CDATA #FIXED 'http://www.w3.org/2001/XMLSchema-instance'
-        xsi:schemaLocation CDATA #FIXED 'http://www.w3schools.com validation.xsd'
+
+    <!ATTLIST tourists 
+        t_id IDREF #REQUIRED
+        t_startDate NMTOKEN #REQUIRED
+    >
+
+    <!ATTLIST src 
+        url ENTITY #REQUIRED
     >
 
     

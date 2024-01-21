@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           xmlns:xlink="http://www.w3.org/1999/xlink"
            xmlns="http://www.w3schools.com"
            targetNamespace="http://www.w3schools.com"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified">
 			
 			<!-- Attributes of trip - region -->
-			<xs:simpleType name="region">
+			<xs:simpleType name="region_trip">
 				<xs:restriction base="xs:string">
 					<xs:enumeration value="Европа" />
 					<xs:enumeration value="Азия" />
@@ -31,12 +30,6 @@
 				</xs:restriction>
 			</xs:simpleType>
 			
-			<!-- Attributes of image - id -->
-			<xs:simpleType name="id_image">
-				<xs:restriction base="xs:string">
-					<xs:pattern value="([A-Z][a-z]+)+"/>
-				</xs:restriction>
-			</xs:simpleType>
 			
 			<!-- Simple Elements -->
 			<xs:element name="title" type="xs:string"/>
@@ -65,17 +58,21 @@
 						<xs:element ref="trips"/>
 						<xs:element ref="listOfTourists"/>
 					</xs:sequence>
-				</xs:complexType> 
-				<xs:key name="keyTrips">
-					<xs:selector xpath="trips_catalog"/>
-					<xs:field xpath="trips/trip"/>
-				</xs:key> 	
+				</xs:complexType> 	
 			</xs:element>
 			
 			<xs:element name="trips">
 				<xs:complexType>
 					<xs:sequence>
-						<xs:element ref="trip" maxOccurs="unbounded"/>
+						<xs:element ref="trip" minOccurs="1" maxOccurs="unbounded"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+
+			<xs:element name="listOfTourists">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element ref="tourists" minOccurs="1" maxOccurs="unbounded"/>
 					</xs:sequence>
 				</xs:complexType>
 			</xs:element>
@@ -107,7 +104,7 @@
 						<xs:element name="tName" type="xs:string" maxOccurs="unbounded"/>
 					</xs:sequence>
 					<xs:attribute name="t_id"  use="required" type="xs:IDREF"/>
-					<xs:attribute name="t_startDate"  use="required" type="xs:NMTOKEN"/>
+					<xs:attribute name="t_startDate"  use="required" type="xs:date"/>
 				</xs:complexType>
 			</xs:element>
 			
@@ -129,7 +126,7 @@
 						</xs:element>
 					</xs:sequence>
 					<xs:attribute name="id" type="id_trip" use="required"/>
-					<xs:attribute name="region" type="region" use="required"/>
+					<xs:attribute name="region" type="region_trip" use="required"/>
 					<xs:attribute name="destination" type="destination_trip" use="required"/>
 				</xs:complexType>
 				<xs:key name="keyTrip">
@@ -148,11 +145,5 @@
 					<xs:field xpath="@t_startDate"/>
 				</xs:keyref>
 			</xs:element>
-			<xs:element name="listOfTourists">
-				<xs:complexType>
-					<xs:sequence>
-						<xs:element ref="tourists" maxOccurs="unbounded"/>
-					</xs:sequence>
-				</xs:complexType>
-			</xs:element>
+			
 </xs:schema>

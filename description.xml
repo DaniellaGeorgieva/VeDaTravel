@@ -2,18 +2,17 @@
 <?xml-stylesheet type="text/xsl" href="project.xsl"?>
 
 <!DOCTYPE trips_catalog SYSTEM "validation.dtd" [
-	<!ENTITY imgSpain SYSTEM "https://www.state.gov/wp-content/uploads/2023/07/shutterstock_1656628171v2-2107x1406.jpg" NDATA JPG>
-    <!ENTITY imgNorway SYSTEM "https://th.bing.com/th/id/R.edf30599376940d49fb6cc48253a5955?rik=4C4mJsg0Qiywbw&pid=ImgRaw&r=0&fbclid=IwAR3NtIeLparc_vRlK_tceJPSvMn4RdPYTzzfFeArxj8EzI9_7f6cjReWq0w" NDATA JPG>
-    <!ENTITY imgNY SYSTEM "https://th.bing.com/th/id/R.939832af5c7e38d4a50091c897038834?rik=KIkdRccUMVgqcA&pid=ImgRaw&r=0&fbclid=IwAR2mHoCX5V2j3biK-Ov-L8aIVuE9Dh0ttZ5CO4rlm7tBZvdGntXy0mRRfmE" NDATA JPG>
-    <!ENTITY imgLA SYSTEM "https://a.travel-assets.com/findyours-php/viewfinder/images/res70/475000/475457-Los-Angeles.jpg?fbclid=IwAR0zSEvRImwD3fK_hC86Ci9I0jUSWoBeZ-V8lRDIXrvWCobGHqVnGD3mPnM" NDATA JPG>
-    <!ENTITY imgEgypt SYSTEM "https://www.postposmo.com/wp-content/uploads/2023/08/Piramides-de-Giza.jpg?fbclid=IwAR08u0C1mTu21GB4Ak8qJfSxIxTZBNQOrsCHY3DQdMmnQX5lig7j3snbYbY" NDATA JPG>
-    <!ENTITY imgJapan SYSTEM "https://facesoman.com/wp-content/uploads/2020/07/Treasures-of-Japan.jpg?fbclid=IwAR1aZxCMHzNUMj1UX4ZvnMBphcgPPx20ZyOodsBjzK_H551SJ0-3nksNrms" NDATA JPG>
-    <!ENTITY imgIndia SYSTEM "https://1.bp.blogspot.com/-k6NWW6KiA_Y/Xf3tYZ2734I/AAAAAAAAALg/JuE3YDiua6cfI24kCCeAg4XwggQv2sWlQCLcBGAsYHQ/s1600/gettyimages-155096944-612x612%2B%25281%2529.jpg?fbclid=IwAR2ikxlYeci0yWXF_fe_o92ocZdjVBfpmgBup1Vi0DeFjkcfcm9-VlvYAmw" NDATA JPG>
+	<!ENTITY imgSpain PUBLIC "IMAGE" "https://www.state.gov/wp-content/uploads/2023/07/shutterstock_1656628171v2-2107x1406.jpg" NDATA JPG>
+    <!ENTITY imgNorway PUBLIC "IMAGE" "https://th.bing.com/th/id/R.edf30599376940d49fb6cc48253a5955?rik=4C4mJsg0Qiywbw&pid=ImgRaw&r=0&fbclid=IwAR3NtIeLparc_vRlK_tceJPSvMn4RdPYTzzfFeArxj8EzI9_7f6cjReWq0w" NDATA JPG>
+    <!ENTITY imgNY PUBLIC "IMAGE" "https://th.bing.com/th/id/R.939832af5c7e38d4a50091c897038834?rik=KIkdRccUMVgqcA&pid=ImgRaw&r=0&fbclid=IwAR2mHoCX5V2j3biK-Ov-L8aIVuE9Dh0ttZ5CO4rlm7tBZvdGntXy0mRRfmE" NDATA JPG>
+    <!ENTITY imgLA PUBLIC "IMAGE" "https://a.travel-assets.com/findyours-php/viewfinder/images/res70/475000/475457-Los-Angeles.jpg?fbclid=IwAR0zSEvRImwD3fK_hC86Ci9I0jUSWoBeZ-V8lRDIXrvWCobGHqVnGD3mPnM" NDATA JPG>
+    <!ENTITY imgEgypt PUBLIC "IMAGE" "https://www.postposmo.com/wp-content/uploads/2023/08/Piramides-de-Giza.jpg?fbclid=IwAR08u0C1mTu21GB4Ak8qJfSxIxTZBNQOrsCHY3DQdMmnQX5lig7j3snbYbY" NDATA JPG>
+    <!ENTITY imgJapan PUBLIC "IMAGE" "https://facesoman.com/wp-content/uploads/2020/07/Treasures-of-Japan.jpg?fbclid=IwAR1aZxCMHzNUMj1UX4ZvnMBphcgPPx20ZyOodsBjzK_H551SJ0-3nksNrms" NDATA JPG>
+    <!ENTITY imgIndia PUBLIC "IMAGE" "https://1.bp.blogspot.com/-k6NWW6KiA_Y/Xf3tYZ2734I/AAAAAAAAALg/JuE3YDiua6cfI24kCCeAg4XwggQv2sWlQCLcBGAsYHQ/s1600/gettyimages-155096944-612x612%2B%25281%2529.jpg?fbclid=IwAR2ikxlYeci0yWXF_fe_o92ocZdjVBfpmgBup1Vi0DeFjkcfcm9-VlvYAmw" NDATA JPG>
 ]>
 
 <trips_catalog
 		xmlns="http://www.w3schools.com"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.w3schools.com validation.xsd">
 		<trips>
